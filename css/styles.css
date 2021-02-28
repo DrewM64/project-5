@@ -1,0 +1,28 @@
+.container {
+    padding: 20px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.searchbox {
+    display: flex;
+    align-content: center;
+}
+
+#site-search {
+    margin: 0 auto;
+    height: 2.5em;
+    width: 50%;
+    border-radius: 5px;
+    border: solid lightgray 2px;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
