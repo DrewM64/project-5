@@ -9,13 +9,18 @@
     align-content: center;
 }
 
-#site-search {
+#search {
     margin: 0 auto;
     height: 2.5em;
     width: 50%;
     border-radius: 5px;
     border: solid lightgray 2px;
     font-size: 1.2em;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, .7);
 }
 
 main {
@@ -23,6 +28,10 @@ main {
     display: grid;
     align-items: center;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gallery a {
+    margin: auto;
 }
